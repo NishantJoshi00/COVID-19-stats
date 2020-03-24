@@ -1,5 +1,5 @@
 body {
-    --main-bg-color: rgb(190, 190, 190);
+    --main-bg-color: rgb(223, 223, 223);
     background-color: var(--main-bg-color);
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
