@@ -84,7 +84,7 @@ xmlhttp.onreadystatechange = function() {
         for (i of document.getElementsByClassName('c')) {
             i.onclick = (el) => {
                 console.log(el['target'].innerHTML);
-                getHistory.open("GET", `https://corona.lmao.ninja/historical/${el['target'].innerHTML}`, true);
+                getHistory.open("GET", `https://corona.lmao.ninja/v2/historical/${el['target'].innerHTML}`, true);
                 graph.options.title.text = "NovelCOVID-19 stats " + `for ${el['target'].innerHTML}`
                 // graph.update();
                 getHistory.send();
@@ -94,7 +94,7 @@ xmlhttp.onreadystatechange = function() {
     }
 }
 
-xmlhttp.open("GET", "https://corona.lmao.ninja/historical", true);
+xmlhttp.open("GET", "https://corona.lmao.ninja/v2/historical", true);
 xmlhttp.send()
 
 document.getElementById("dead").onclick = function() {
